@@ -26,7 +26,7 @@ public class PlayerInteract : MonoBehaviour
 
         // a new ray from where the player is looking
         Ray ray = new Ray(cam.transform.position, cam.transform.forward);
-        Debug.DrawRay(ray.origin, ray.direction * distance);
+        // Debug.DrawRay(ray.origin, ray.direction * distance);
 
         // returns info to hitInfo, only runs if ray hit something
         if(Physics.Raycast(ray, out RaycastHit hitInfo, distance, mask)){
